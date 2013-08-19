@@ -1,5 +1,5 @@
 couchdb.stderr
-couchdb.stout
+couchdb.stdout
 node_modules
 lib-cov
 *.seed
