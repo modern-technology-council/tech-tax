@@ -10,6 +10,7 @@ var redis = require('redis'),
     express = require('express'),
     app = express(),
     Twit = require('twit'),
+    //already generated new key
     T = new Twit({
       consumer_key: '',
       consumer_secret: '',
