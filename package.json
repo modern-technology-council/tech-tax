@@ -1,0 +1,31 @@
+{
+  "name": "fixH3535",
+  "version": "0.0.1",
+  "description": "Coalition to Fix the Tech Tax (Twitter Vote System)",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~3.3.5",
+    "hiredis": "~0.1.15",
+    "nano": "~4.1.1",
+    "redis": "~0.8.4",
+    "twit": "~1.1.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:modern-technology-council/tech-tax.git"
+  },
+  "keywords": [
+    "Twitter",
+    "Voting"
+  ],
+  "author": "Modern Technology Council",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/modern-technology-council/tech-tax/issues"
+  }
+}

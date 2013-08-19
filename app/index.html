@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Fix the H3535 Tech Tax</title>
+<meta name="description" content="Fix the H3535 Tech Tax">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+<style>
+table {
+  margin: auto;
+}
+td,th {
+  padding: 10px;
+}
+.js-repeal-cell, .js-injunction-cell {
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+<!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');
+</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- app start -->
+<h1>Coalition to Fix the Tech Tax</h1>
+<p style="width:33%;margin:1em auto 1em auto;text-align:justify;">
+Read <a href="http://bostinno.streetwise.co/2013/08/14/two-possible-remedies-to-the-mass-techtax-initiative-or-injunction/" target="_blank">this article</a> and then cast your vote.
+This is an informal vote to help raise awareness and better organize our industry for action. More information can be found at <a href="http://www.alt236.org/#/Tech_Tax/" target="_blank">alt236.org</a>. Click the corresponding Tweet button below to help the Massachusetts Technology industry.
+</p>
+
+<table border="1">
+  <thead>
+    Real-time Vote Tracker
+  </thead>
+  <tr>
+    <th>Initiative</th>
+    <th>Injunction</th>
+  </tr>
+  <tr>
+    <td class="js-repeal-cell"></td>
+    <td class="js-injunction-cell"></td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://twitter.com/intent/tweet?button_hashtag=voteRepeal&text=I%20voted%20to%20repeal%20the%20%23TechTax%20at%20" class="twitter-hashtag-button" data-size="large" data-related="myimedia,fixH3535" data-url="http://fixH3535.org/">Tweet #voteRepeal</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </td>
+    <td>
+      <a href="https://twitter.com/intent/tweet?button_hashtag=voteInjunction&text=I%20voted%20for%20an%20injunction%20of%20the%20%23TechTax%20at%20" class="twitter-hashtag-button" data-size="large" data-related="myimedia,fixH3535" data-url="http://fixH3535.org/">Tweet #voteInjunction</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </td>
+  </tr>
+</table>
+<p>Timeline below may take up to a minute to display your Tweet.</p>
+<div style="margin-top:1em;">
+<a class="twitter-timeline" href="https://twitter.com/search?q=techtax" data-widget-id="364872426691117060">Tweets about "techtax"</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
+<div class="footer">
+  <p>Sponsored by the <a href="http://alt236.org">Modern Technology Council</a></p>
+</div>
+
+<script>
+
+   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+   e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+   e.src='//www.google-analytics.com/analytics.js';
+   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+   ga('create','UA-33181689-3');ga('send','pageview');
+
+
+
+
+</script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script>
+$(document).ready(
+  setInterval(function() {
+      var result;
+      $.get('/api/all', function(data) {
+        result = JSON.parse(data);
+        $('.js-repeal-cell').text(result.repeal);
+        $('.js-injunction-cell').text(result.injunction);
+        });    
+      },1000)
+);
+</script>
+</body>
+</html>
