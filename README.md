@@ -1,4 +1,4 @@
 tech-tax
 ========
 
-Coalition to Fix the MA Teach
+Coalition to Fix the MA Tech Tax
