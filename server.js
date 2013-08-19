@@ -11,10 +11,10 @@ var redis = require('redis'),
     app = express(),
     Twit = require('twit'),
     T = new Twit({
-      consumer_key: '9dA2vFEQTfpUX5XnvxUpqQ',
-      consumer_secret: 'xZi2dzaqmI8jORHbkHYo1WzfkmmemLPmdIL0oI5VcdM',
-      access_token: '19214433-4Bz8D8mVX9nUkSz4UazSsC2ku35tRgLqeXAATqY',
-      access_token_secret: '2Z7TptTDvTTblxJJeHNGU2SEkgoZrD1yRdjETWCA'
+      consumer_key: '',
+      consumer_secret: '',
+      access_token: '',
+      access_token_secret: ''
     }),
     techtax = T.stream('statuses/filter', {track : 'techtax'});
 
