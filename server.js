@@ -1,3 +1,7 @@
+/*
+// iMedia Solutions, LLC
+// MIT License http://opensource.org/licenses/MIT
+*/
 var redis = require('redis'),
     nano = require('nano')('http://localhost:5984'),
     couchVotes = nano.db.use('h3535votes'),
