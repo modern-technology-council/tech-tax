@@ -1,5 +1,6 @@
 /*
 // iMedia Solutions, LLC
+// Author: Andrew JM Faria http://www.linkedin.com/in/myimedia
 // MIT License http://opensource.org/licenses/MIT
 */
 var redis = require('redis'),
